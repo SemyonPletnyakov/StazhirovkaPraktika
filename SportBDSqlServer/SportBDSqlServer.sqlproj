@@ -63,4 +63,10 @@
     <Build Include="LoginsHistory.sql" />
     <Build Include="LoginUser.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="SportBDSqlServer.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostMetaData.sql" />
+  </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Roles]
 (
-	[Id] INT IDENTITY(1,1), 
+	[Id] INT, 
     [Name] VARCHAR(50) NOT NULL, 
     [ReadSportEvents] BIT NOT NULL,
 	[ChangeSportEvents] BIT NOT NULL,
