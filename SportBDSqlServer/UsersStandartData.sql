@@ -3,9 +3,9 @@ GO
 
 MERGE INTO [dbo].Users AS Target
 USING (VALUES
-    (1,1, 'admin', 'password', 'Иванов Иван Иванович'),
-    (2,2, 'manager', 'password', 'Сергеев Сергей Сергеевич'),
-    (3,3, 'common_user', 'password', 'Алексеев Алексей Алексеевич')
+    (1,1, 'admin', 'password', N'Иванов Иван Иванович'),
+    (2,2, 'manager', 'password', N'Сергеев Сергей Сергеевич'),
+    (3,3, 'common_user', 'password', N'Алексеев Алексей Алексеевич')
 ) AS Source (Id, RoleId , Login , Password , FIO)
 ON (Target.Id = Source.Id)
 WHEN MATCHED THEN

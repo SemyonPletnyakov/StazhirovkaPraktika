@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Roles]
 (
 	[Id] INT, 
-    [Name] VARCHAR(50) NOT NULL, 
+    [Name] NVARCHAR(50) NOT NULL, 
     [ReadSportEvents] BIT NOT NULL,
 	[ChangeSportEvents] BIT NOT NULL,
 	[ChangeUsers] BIT NOT NULL, 
