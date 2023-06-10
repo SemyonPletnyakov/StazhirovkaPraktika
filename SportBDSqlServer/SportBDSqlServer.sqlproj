@@ -65,6 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="SportBDSqlServer.publish.xml" />
+    <None Include="Metadata.sql" />
+    <None Include="UsersStandartData.sql" />
+    <None Include="RolesStandartData.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostMetaData.sql" />
