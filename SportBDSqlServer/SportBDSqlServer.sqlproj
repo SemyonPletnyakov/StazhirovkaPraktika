@@ -56,20 +56,28 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Procedures" />
+    <Folder Include="Meta" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Roles.sql" />
-    <Build Include="Users.sql" />
-    <Build Include="LoginsHistory.sql" />
-    <Build Include="LoginUser.sql" />
+    <Build Include="Tables\Roles.sql" />
+    <Build Include="Procedures\LoginUser.sql" />
+    <None Include="Meta\Metadata.sql" />
+    <None Include="Meta\RolesStandartData.sql" />
+    <None Include="Meta\UsersStandartData.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SportBDSqlServer.publish.xml" />
-    <None Include="Metadata.sql" />
-    <None Include="UsersStandartData.sql" />
-    <None Include="RolesStandartData.sql" />
+    <None Include="Procedures\RolesGetPage.sql" />
+    <None Include="Procedures\UsersGetPage.sql" />
+    <None Include="Procedures\LoginsHistoryGetPage.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostMetaData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Users.sql" />
+    <Build Include="Tables\LoginsHistory.sql" />
   </ItemGroup>
 </Project>

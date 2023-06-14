@@ -12,4 +12,4 @@
 
 
 
-:r .\Metadata.sql
+:r .\Meta\Metadata.sql

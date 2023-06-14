@@ -9,3 +9,7 @@
 	CONSTRAINT [AK_Users_Login] UNIQUE ([Login]),
     CONSTRAINT [FK_Users_ToRoles] FOREIGN KEY ([RoleId]) REFERENCES [Roles]([Id]) ON DELETE SET NULL
 )
+
+GO
+
+CREATE INDEX [IX_Users_RoleId] ON [dbo].[Users] ([RoleId])

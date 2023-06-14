@@ -8,3 +8,7 @@
     CONSTRAINT [PK_Roles] PRIMARY KEY ([Id])
 )
 	
+
+GO
+
+CREATE INDEX [IX_Roles_Name] ON [dbo].[Roles] ([Name])
